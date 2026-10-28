@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soch Style — Premium Sartaroshxona</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="loader"><div class="scissor">✂</div><b>SOCH STYLE</b><i></i></div>
+<header id="nav"><a href="#top" class="logo">SOCH<span>STYLE</span></a><nav id="menu">
+<a href="#styles">Stillar</a><a href="#ai">AI Stylist</a><a href="#map">Yaqin</a><a href="#barbers">Barberlar</a><a href="#trends">Trendlar</a><a href="#shop">Mahsulot</a><a href="#problems">Muammolar</a><a href="#prices">Narxlar</a><a href="#gallery">Galereya</a><a href="#blog">Blog</a><a href="#contact">Aloqa</a></nav>
+<button class="btn sm" onclick="openProfile()">♛ Profil <em id="favc">0</em></button><button id="burger" onclick="menu.classList.toggle('open')">☰</button></header>
+<section id="top" class="hero"><div class="bg" id="herobg"></div><div class="shade"></div><div class="hc"><small>PREMIUM BARBERSHOP PLATFORMASI</small><h1>O‘z uslubingni <em>yarat</em></h1><p>100+ soch turmagi, AI Stylist, yaqin barberlar va online bron — hammasi bitta joyda.</p><div><a href="#ai" class="btn glow">✦ AI Stylist</a> <a href="#barbers" class="btn ghost">Bron qilish</a></div>
+<div class="stats"><div><b data-n="12500">0</b>mijoz</div><div><b data-n="48">0</b>barber</div><div><b data-n="120">0</b>stil</div></div></div></section>
+<section id="styles"><h2 class="rv">Soch <em>stillari</em></h2><div class="tools rv"><input id="q" placeholder="🔍 Qidirish: fade, klassik..."><div id="cats"></div><select id="face"><option value="">Barcha yuz shakllari</option></select><select id="sort"><option value="">Saralash</option><option value="p">Narx ↑</option><option value="r">Reyting ↓</option></select></div><div id="grid" class="grid"></div></section>
+<section id="ai" class="dark"><h2 class="rv">AI <em>Stylist</em></h2><div class="aibox rv"><div><h3>1. Rasm yuklang (ixtiyoriy)</h3><label class="up" id="upl"><input type="file" accept="image/*" id="file" hidden><span>📷 Selfi tanlang</span></label><h3>2. Yuz shakli</h3><div id="faces" class="chips"></div><h3>3. Soch uzunligi</h3><div id="lens" class="chips"></div><h3>4. Soqol</h3><div id="beards" class="chips"></div><button class="btn glow" onclick="runAI()">✦ Tavsiya olish</button></div><div id="aires" class="airs"><p class="muted">Natija shu yerda chiqadi. Yuz shaklingizni tanlang.</p></div></div></section>
+<section id="map"><h2 class="rv">Yaqin <em>sartaroshlar</em></h2><div class="mapw rv"><div id="mapel"></div><div><button class="btn sm" onclick="locate()">📍 Joylashuvim</button><div id="blist"></div></div></div></section>
+<section id="barbers" class="dark"><h2 class="rv">Top <em>barberlar</em></h2><div id="bgrid" class="grid b"></div></section>
+<section id="trends"><h2 class="rv">2026 <em>Trendlar</em></h2><div id="tr" class="trs"></div></section>
+<section id="shop" class="dark"><h2 class="rv">Soch <em>mahsulotlari</em> <button class="btn sm" onclick="toast('Savat: '+cart+' ta mahsulot')">🛒 <em id="cartc">0</em></button></h2><div id="pgrid" class="grid p"></div></section>
+<section id="problems"><h2 class="rv">Soch <em>muammolari</em> va yechimlar</h2><div id="pchips" class="chips c rv"></div><div id="psol" class="sol rv"><p class="muted">Muammoni tanlang — sabab, yechim va mahsulotlar chiqadi.</p></div></section>
+<section id="prices" class="dark"><h2 class="rv">Xizmat <em>narxlari</em></h2><div id="pr" class="prices"></div></section>
+<section id="gallery"><h2 class="rv">Galereya</h2><div id="gal" class="gal"></div></section>
+<section id="blog" class="dark"><h2 class="rv">Blog</h2><div id="bl" class="grid b"></div></section>
+<section id="contact"><h2 class="rv">Biz bilan <em>aloqa</em></h2><div class="cform rv"><div><p>📍 Toshkent, Amir Temur ko‘chasi 15</p><p>📞 +998 90 123 45 67</p><p>✉ info@sochstyle.uz</p><p>🕘 Har kuni 09:00–22:00</p></div><form onsubmit="event.preventDefault();toast('Xabaringiz yuborildi ✓');this.reset()"><input required placeholder="Ismingiz"><input required placeholder="Telefon"><textarea required placeholder="Xabar"></textarea><button class="btn glow">Yuborish</button></form></div></section>
+<footer>© 2026 SOCH STYLE · Premium sartaroshxona platformasi</footer>
+<div id="modal"><div class="mbox"><button class="x" onclick="closeM()">✕</button><div id="mc"></div></div></div><div id="toast"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script><script src="app.js"></script></body></html>
